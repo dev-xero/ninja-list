@@ -3,13 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
-import NavBar from '../components/NavBar'
-import Footer from '../components/Footer'
-
 export default function Home() {
   return (
     <div>
-      <NavBar />
       <h1>Homepage</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
@@ -19,7 +15,6 @@ export default function Home() {
         atque nesciunt ipsa.
       </p>
       <Link href='/ninjas'><a>See Ninja Listing</a></Link>
-      <Footer />
     </div>
   )
 }
