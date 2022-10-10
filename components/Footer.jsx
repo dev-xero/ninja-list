@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
 	return ( 
-		<div>
+		<footer>
 			<p>Copyright { new Date().getFullYear() } Ninja List</p>
-		</div>
+		</footer>
 	);
 }
  
