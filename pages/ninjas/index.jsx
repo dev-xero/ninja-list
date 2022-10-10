@@ -1,5 +1,5 @@
 const Ninjas = () => {
-  return <div>Ninjas</div>
+  return <h1>All Ninjas</h1>
 }
 
 export default Ninjas
