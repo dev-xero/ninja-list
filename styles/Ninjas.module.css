@@ -6,6 +6,11 @@
   border-left: 8px solid hsl(213, 40%, 68%);
 	cursor: pointer;
 }
+
 .single:hover {
   border-left: 8px solid #4979ff;
+}
+
+.error {
+	color: hsl(226, 11%, 57%)
 }
