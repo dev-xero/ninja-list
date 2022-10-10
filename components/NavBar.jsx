@@ -19,7 +19,13 @@ const NavBar = () => {
         </a>
       </Link>
       <Link href="/ninjas">
-        <a className={pathname === '/ninjas' ? 'current-active' : ''}>
+        <a
+          className={
+            pathname === '/ninjas' || pathname.match(/\/ninjas/ig)
+              ? 'current-active'
+              : ''
+          }
+        >
           Ninja Listing
         </a>
       </Link>
