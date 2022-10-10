@@ -52,3 +52,8 @@ footer {
   color: hsl(224, 100%, 64%);
   text-decoration: underline;
 }
+
+.redirect-msg {
+  font-size: 14px;
+  color: hsl(224, 21%, 69%);
+}
