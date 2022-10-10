@@ -26,11 +26,12 @@ nav {
   padding: 10px 0;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
   border-bottom: 1px solid #ddd;
 }
 nav a {
   margin-left: 12px;
+  font-weight: 600;
 }
 nav .logo {
   margin-right: auto;
