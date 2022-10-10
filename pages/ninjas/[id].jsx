@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 
 export const getStaticPaths = async () => {
   const res = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -29,13 +30,18 @@ export const getStaticProps = async (context) => {
 
 const Details = ({ data }) => {
   return (
-    <div>
+    <>
+      <Head>
+        <title>Ninja List | Ninja</title>
+        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <meta name="keywords" content="ninja lists" />
+      </Head>
       <h1>Details Page</h1>
       <h3>{data.name}</h3>
       <p>Email: {data.email}</p>
       <p>Website: {data.website}</p>
       <p>Address: {data.address.city}</p>
-    </div>
+    </>
   )
 }
 

@@ -49,6 +49,7 @@ nav a.current-active {
 
 nav .logo {
   margin-right: auto;
+  margin-left: 0px;
 }
 footer {
   display: block;

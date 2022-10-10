@@ -7,9 +7,11 @@ const NavBar = () => {
   const pathname = useRouter().pathname
   return (
     <nav>
-      <div className="logo">
-        <Image src="/icon.png" alt="logo" width={167} height={53}></Image>
-      </div>
+      <Link href="/">
+        <a className="logo">
+          <Image src="/icon.png" alt="logo" width={167} height={53}></Image>
+        </a>
+      </Link>
       <Link href="/">
         <a className={pathname === '/' ? 'current-active' : ''}>Home</a>
       </Link>
@@ -21,7 +23,7 @@ const NavBar = () => {
       <Link href="/ninjas">
         <a
           className={
-            pathname === '/ninjas' || pathname.match(/\/ninjas/ig)
+            pathname === '/ninjas' || pathname.match(/\/ninjas/gi)
               ? 'current-active'
               : ''
           }
