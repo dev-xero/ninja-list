@@ -27,7 +27,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid hsl(0, 0%, 87%);
 }
 nav a {
   margin-left: 24px;
