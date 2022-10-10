@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 
 import styles from '../../styles/Ninjas.module.css'
 
@@ -26,12 +27,12 @@ const Ninjas = ({ ninjas }) => {
       <h1>All Ninjas</h1>
       {ninjas.length > 0 &&
         ninjas.map(ninja => (
-          <div key={ninja.id}>
+          <Link key={ninja.id} href={`ninjas/${ninja.id}`}>
             <a className={styles.single}>
               <h3>{ninja.name}</h3>
               <p className={styles.email}>{ninja.email}</p>
             </a>
-          </div>
+          </Link>
         ))}
       {!ninjas.length > 0 ? (
         <div className={styles.error}>
