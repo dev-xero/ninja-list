@@ -1,16 +1,21 @@
 .single {
   padding: 2px 16px;
-  background: hsl(226, 35%, 93%);
+  background: hsl(0, 0%, 94%);
   display: block;
   margin: 20px 10px;
   border-left: 8px solid hsl(213, 40%, 68%);
-	cursor: pointer;
+  cursor: pointer;
+  font-size: 14px;
 }
 
 .single:hover {
-  border-left: 8px solid #4979ff;
+  border-left: 8px solid hsl(224, 100%, 64%);
 }
 
 .error {
-	color: hsl(226, 11%, 57%)
+  color: hsl(226, 11%, 57%);
+}
+
+.email {
+  color: hsl(224, 100%, 64%);
 }

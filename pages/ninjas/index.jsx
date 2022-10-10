@@ -4,7 +4,7 @@ import Head from 'next/head'
 import styles from '../../styles/Ninjas.module.css'
 
 export const getStaticProps = async () => {
-  const res = await fetch('https://jsonplaceholder.typicode.com/user').catch(
+  const res = await fetch('https://jsonplaceholder.typicode.com/users').catch(
     err => console.log(err)
   )
   const data = await res.json()
@@ -29,6 +29,7 @@ const Ninjas = ({ ninjas }) => {
           <div key={ninja.id}>
             <a className={styles.single}>
               <h3>{ninja.name}</h3>
+              <p className={styles.email}>{ninja.email}</p>
             </a>
           </div>
         ))}
