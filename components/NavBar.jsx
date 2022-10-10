@@ -1,10 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import Router from 'next/router'
+import { useRouter } from 'next/router'
 
 const NavBar = () => {
-  const pathname = Router.pathname
+  const pathname = useRouter().pathname
   return (
     <nav>
       <div className="logo">
